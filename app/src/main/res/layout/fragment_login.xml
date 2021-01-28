@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.todolistapp.navigation.LoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/login_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/login_imageview"
+            android:gravity="center"
+            android:src="@drawable/ic_account"
+            app:layout_constraintBottom_toTopOf="@+id/login_username_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/login_username_input"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:ems="24"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:padding="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/login_password_input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_imageview"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/login_password_input"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/forgot_password_textview"
+            app:layout_constraintStart_toStartOf="@+id/login_username_input"
+            app:layout_constraintTop_toBottomOf="@+id/login_username_input"
+            tools:ignore="Autofill,LabelFor" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/login"
+            app:layout_constraintBottom_toTopOf="@+id/not_registered_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forgot_password_textview" />
+
+        <TextView
+            android:id="@+id/forgot_password_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/purple_200"
+            app:layout_constraintBottom_toTopOf="@+id/login_button"
+            app:layout_constraintEnd_toEndOf="@+id/login_password_input"
+            app:layout_constraintTop_toBottomOf="@+id/login_password_input" />
+
+        <TextView
+            android:id="@+id/not_registered_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_yet_registered"
+            app:layout_constraintBottom_toTopOf="@+id/signup_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login_button" />
+
+        <TextView
+            android:id="@+id/signup_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textColor="@color/purple_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/not_registered_textview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

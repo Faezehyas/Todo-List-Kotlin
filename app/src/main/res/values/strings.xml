@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ToDo List App</string>
+    <string name="register_button">Register</string>
+    <string name="registration">Registration</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_icon">LoginIcon</string>
+    <string name="register_icon">Register_icon</string>
+    <string name="example_username">example</string>
+    <string name="example_password">askjhdi2312!</string>
+    <string name="don_t_have_an_account_register_now">Don\'t have an account? Register now!</string>
+    <string name="about">about</string>
+    <string name="login_imageview">login imageview</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="not_yet_registered">Not yet registered?</string>
+    <string name="signup">Signup</string>
+    <string name="card_sample_todo_textview">to-do #1</string>
+    <string name="add_to_do_here">add to-do here</string>
+</resources>
