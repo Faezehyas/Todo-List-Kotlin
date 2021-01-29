@@ -29,17 +29,34 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
         android:ems="24"
         android:gravity="start"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/register_username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/register_username"
+        app:layout_constraintBottom_toTopOf="@+id/register_name"
+        app:layout_constraintEnd_toEndOf="@+id/register_name"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/register_name"
         app:layout_constraintTop_toBottomOf="@+id/register_image_icon"
         tools:ignore="Autofill,LabelFor" />
+
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:ems="24"
+        android:padding="16dp"
+        android:inputType="textPersonName"
+        android:hint="@string/register_name"
+        app:layout_constraintBottom_toTopOf="@+id/register_username"
+        app:layout_constraintEnd_toEndOf="@+id/register_username"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/register_username"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
 
 
     <EditText
@@ -47,16 +64,16 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:ems="24"
         android:hint="@string/username"
         android:inputType="text"
         android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/register_password"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/register_password"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/register_password"
-        app:layout_constraintTop_toBottomOf="@+id/register_email"
+        app:layout_constraintTop_toBottomOf="@+id/register_name"
         tools:ignore="Autofill" />
 
 
@@ -74,6 +91,7 @@
         android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/register_button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_username"
         tools:ignore="Autofill,LabelFor" />
@@ -92,5 +110,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
