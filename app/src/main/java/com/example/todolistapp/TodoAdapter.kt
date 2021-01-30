@@ -6,14 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.todolistapp.model.Todo
 import kotlinx.android.synthetic.main.todo_list_item.view.*
 
 
-class TodoAdapter(private val todos : MutableList<Todo>) : RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
-
+class TodoAdapter(private val todos : MutableList<Todo>) :
+        RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
     class TodoViewHolder(itemView:View) : RecyclerView.ViewHolder(itemView)
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
         return TodoViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.todo_list_item, parent, false))
